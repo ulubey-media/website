@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { PulseBeams } from "@/components/PulseBeams";
 
 export default function HeroSection() {
   return (
     <section className="min-h-[90vh] flex flex-col justify-center px-4 md:px-16 py-20 w-full max-w-[1280px] mx-auto relative overflow-hidden">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <PulseBeams />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
         <div className="flex flex-col items-start gap-6 max-w-2xl">
           <div
             className="inline-flex items-center px-4 py-2 rounded-full"
@@ -41,40 +43,8 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Abstract Geometric Visual */}
-        <div className="hidden lg:flex justify-end relative h-[500px]">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-[400px] h-[400px] relative">
-              <div
-                className="absolute top-10 left-10 w-48 h-64 rounded-2xl"
-                style={{ border: "2px solid #0F3460", transform: "rotate(-6deg)" }}
-              />
-              <div
-                className="absolute bottom-10 right-10 w-56 h-40 bg-navy rounded-xl shadow-2xl flex items-center justify-center"
-                style={{ transform: "rotate(3deg)" }}
-              >
-                <div className="w-1/2 h-[2px] bg-amber/60 rounded-full" />
-              </div>
-              <div className="absolute top-24 right-16 w-4 h-4 bg-amber rounded-full" />
-              <div
-                className="absolute bottom-32 left-20 w-24 h-24 rounded-full flex items-center justify-center"
-                style={{ border: "1px solid rgba(120,113,108,0.3)" }}
-              >
-                <div className="w-1/2 h-[1px] rotate-45" style={{ background: "rgba(120,113,108,0.4)" }} />
-              </div>
-              <div
-                className="absolute top-40 right-40 w-16 h-16 rounded-full flex items-center justify-center"
-                style={{ background: "rgba(15,52,96,0.08)" }}
-              >
-                <div className="w-2 h-2 bg-navy rounded-full" />
-              </div>
-              <div
-                className="absolute top-6 right-32 w-[1px] h-20"
-                style={{ background: "linear-gradient(to bottom, transparent, #E8C07D, transparent)" }}
-              />
-            </div>
-          </div>
-        </div>
+        {/* PulseBeams animasyonu arka plandan görünüyor — sağ kolon boş bırakıldı */}
+        <div className="hidden lg:block" />
       </div>
     </section>
   );
