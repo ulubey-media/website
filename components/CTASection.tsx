@@ -28,7 +28,7 @@ export default function CTASection() {
           Teklif Al
         </Link>
         <a
-          href="https://wa.me/905XXXXXXXXX"
+          href="https://wa.me/905306827890"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-6 inline-flex items-center text-white/50 text-sm hover:text-white/80 transition-colors"

@@ -70,7 +70,7 @@ export default function Footer() {
                 info@ulubeymedia.com
               </a>
               <a
-                href="https://wa.me/905XXXXXXXXX"
+                href="https://wa.me/905306827890"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/60 text-sm hover:text-amber transition-colors inline-flex items-center gap-2"
